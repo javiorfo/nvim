@@ -1,7 +1,9 @@
+local languages = require'settings.languages'
+
 return {
     "javiorfo/nvim-fuel",
     lazy = true,
-    ft = { "c", "go", "java", "lua", "rust" },
+    ft = languages,
     dependencies = { "javiorfo/nvim-popcorn" },
     config = function()
         require 'fuel'.setup {
