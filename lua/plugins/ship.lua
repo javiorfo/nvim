@@ -3,7 +3,11 @@ return {
     lazy = true,
     ft = "ship",
     cmd = { "ShipCreate", "ShipCreateEnv" },
-    dependencies = { "javiorfo/nvim-popcorn", "javiorfo/nvim-spinetta" },
+    dependencies = { 
+        "javiorfo/nvim-popcorn",
+        "javiorfo/nvim-spinetta",
+        "hrsh7th/nvim-cmp"
+    },
     config = function()
         require 'ship'.setup {
             response = {
