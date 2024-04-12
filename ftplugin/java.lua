@@ -2,7 +2,7 @@ local home = os.getenv("HOME")
 local jdtls = require'jdtls'
 local dap = require'dap'
 
-require'util'.lsp_icons()
+require'settings.util'.lsp_icons()
 
 local config = {
     ---@diagnostic disable-next-line: undefined-global
