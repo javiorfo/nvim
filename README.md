@@ -10,13 +10,25 @@
 - **nvim-dap**: Debugger
 - **nvim-jdtls**: Java LSP
 - **nvim-fuel**: Main runner
+    - **nvim-popcorn**
 - **nvim-ship**: REST, GraphQL API caller
+    - **nvim-popcorn**
+    - **nvim-spinetta**
+    - **nvim-cmp**
 - **nvim-hemingway**: Comments
+    - **nvim-popcorn**
 - **nvim-soil**: Plant UML
 - **nvim-springtime**: Spring Initializr Wrapper
+    - **nvim-popcorn**
+    - **nvim-spinetta**
+    - **nvim-cmp**
 - **nvim-wildcat**: JBoss and Tomcat plugin
+    **nvim-popcorn**
 - **nvim-telescope**
+    - **telescope-ui-select.nvim**
+    - **plenary.nvim**
 - **nvim-tree.lua**: File Manager
+    - **nvim-web-devicons**
 - **nvim-lspconfig**: Multiple LSP
 - **lualine.nvim**: Statusline
 
