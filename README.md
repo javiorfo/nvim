@@ -29,7 +29,7 @@
     - **plenary.nvim**
 - **nvim-tree.lua**: File Manager
     - **nvim-web-devicons**
-- **nvim-lspconfig**: Multiple LSP
+- **nvim-lspconfig**: LSP (C, Go, Lua, Rust)
 - **lualine.nvim**: Statusline
 
 ---
