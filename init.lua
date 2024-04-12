@@ -35,19 +35,4 @@ vim.opt.rtp:prepend(lazypath)
 
 require'mappings'
 
-require("lazy").setup({
-    require'plugins.nyctophilia',
-    require'plugins.lualine',
-    require'plugins.hemingway',
-    require'plugins.fuel',
-    require'plugins.wildcat',
-    require'plugins.soil',
-    require'plugins.springtime',
-    require'plugins.ship',
-    require'plugins.tree',
-    require'plugins.telescope',
-    require'plugins.lsp',
-    require'plugins.cmp',
-    require'plugins.jdtls',
-    require'plugins.dap'
-})
+require("lazy").setup("plugins")
