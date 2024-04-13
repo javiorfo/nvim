@@ -1,13 +1,12 @@
 local lsp_icons = require 'settings.util'.lsp_icons
 local languages = require 'settings.languages'
-local table_contains_string = require'settings.util'.table_contains_string
 
 return {
     "neovim/nvim-lspconfig",
     lazy = true,
     ft = languages,
     config = function()
-        if table_contains_string(languages, "java") then
+        if vim.bo.filetype == "java" then
             return
         end
 
@@ -24,69 +23,59 @@ return {
         require 'lspconfig.ui.windows'.default_options.border = 'rounded'
 
         -- C
-        if table_contains_string(languages, "c") then
-            lsp_config.clangd.setup {
-                on_attach = on_attach,
-                capabilities = capabilities,
-            }
-        end
+        lsp_config.clangd.setup {
+            on_attach = on_attach,
+            capabilities = capabilities,
+        }
 
         -- Go
-        if table_contains_string(languages, "go") then
-            lsp_config.gopls.setup {
-                on_attach = on_attach,
-                capabilities = capabilities,
-            }
-        end
+        lsp_config.gopls.setup {
+            on_attach = on_attach,
+            capabilities = capabilities,
+        }
 
         -- Kotlin
-        if table_contains_string(languages, "kotlin") then
-            lsp_config.kotlin_language_server.setup {
-                on_attach = on_attach,
-                capabilities = capabilities,
-                settings = {
-                    kotlin = {
-                        compiler = {
-                            jvm = { target = "17" }
-                        }
+        lsp_config.kotlin_language_server.setup {
+            on_attach = on_attach,
+            capabilities = capabilities,
+            settings = {
+                kotlin = {
+                    compiler = {
+                        jvm = { target = "17" }
                     }
-                },
-            }
-        end
+                }
+            },
+        }
 
         -- Lua
-        if table_contains_string(languages, "lua") then
-            lsp_config.lua_ls.setup {
-                on_attach = on_attach,
-                capabilities = capabilities,
-                settings = {
-                    Lua = {
-                        runtime = {
-                            version = 'LuaJIT'
-                        },
-                        diagnostics = {
-                            globals = { 'vim' }
-                        },
-                        telemetry = {
-                            enable = false
-                        }
+        lsp_config.lua_ls.setup {
+            on_attach = on_attach,
+            capabilities = capabilities,
+            settings = {
+                Lua = {
+                    runtime = {
+                        version = 'LuaJIT'
+                    },
+                    diagnostics = {
+                        globals = { 'vim' }
+                    },
+                    telemetry = {
+                        enable = false
                     }
                 }
             }
-        end
+        }
 
         -- Rust
-        if table_contains_string(languages, "rust") then
-            lsp_config.rust_analyzer.setup {
-                on_attach = on_attach,
-                capabilities = capabilities,
-                settings = {
-                    ["rust-analyzer"] = {
-                        checkOnSave = { command = "clippy" }
-                    }
+        lsp_config.rust_analyzer.setup {
+            on_attach = on_attach,
+            capabilities = capabilities,
+            settings = {
+                ["rust-analyzer"] = {
+                    checkOnSave = { command = "clippy" }
                 }
             }
-        end
+        }
     end,
     keys = {
         { 'gD',         '<cmd>lua vim.lsp.buf.declaration()<CR>' },
