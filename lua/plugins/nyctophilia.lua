@@ -1,7 +1,7 @@
 return {
     "javiorfo/nvim-nyctophilia",
     lazy = false,
-    config = function()
+    init = function()
         vim.cmd [[colorscheme nox]]
     end
 }
