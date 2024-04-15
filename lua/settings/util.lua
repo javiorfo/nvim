@@ -1,3 +1,6 @@
+local popcorn = require'popcorn'
+local borders = require'popcorn.borders'
+
 local M = {}
 
 function M.lsp_icons()
