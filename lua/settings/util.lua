@@ -8,4 +8,16 @@ function M.lsp_icons()
     end
 end
 
+local opts = {
+    width = 80,
+    height = 20,
+    border = borders.rounded_corners_border,
+    title = { "  CMD", "Boolean" },
+    content = function()
+        vim.cmd("start | term")
+    end
+}
+
+M.term_popcorn = popcorn:new(opts)
+
 return M
