@@ -5,12 +5,10 @@ return {
     lazy = true,
     ft = languages,
     dependencies = { "javiorfo/nvim-popcorn" },
-    config = function()
-        require 'fuel'.setup {
-            popup = true,
-            console_size = 20
-        }
-    end,
+    opts = {
+        popup = true,
+        console_size = 20
+    },
     keys = {
         { "<leader>ji", "<Plug>Fuel" },
         { "<leader>jc", "<Plug>FuelStop" }
