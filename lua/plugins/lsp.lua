@@ -87,7 +87,8 @@ return {
         { '<leader>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>' },
         { '<leader>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>' },
         { '<leader>D',  '<cmd>lua vim.lsp.buf.type_definition()<CR>' },
-        { '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>' },
+--         { '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>' },
+        { '<leader>rn', '<cmd>lua require("settings.util").rename()<CR>' },
         { '<leader>f',  '<cmd>lua vim.lsp.buf.format{ async = true }<CR>' }
     }
 }

@@ -23,7 +23,7 @@
     - **nvim-spinetta**
     - **nvim-cmp**
 - **nvim-wildcat**: JBoss and Tomcat plugin
-    **nvim-popcorn**
+    - **nvim-popcorn**
 - **nvim-telescope**
     - **telescope-ui-select.nvim**
     - **plenary.nvim**
