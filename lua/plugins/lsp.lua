@@ -88,7 +88,7 @@ return {
         { '<leader>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>' },
         { '<leader>D',  '<cmd>lua vim.lsp.buf.type_definition()<CR>' },
 --         { '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>' },
-        { '<leader>rn', '<cmd>lua require("settings.util").rename()<CR>' },
+        { '<leader>rn', '<cmd>:Renamid<CR>' },
         { '<leader>f',  '<cmd>lua vim.lsp.buf.format{ async = true }<CR>' }
     }
 }
