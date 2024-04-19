@@ -2,6 +2,6 @@ return {
     "javiorfo/nvim-nyctophilia",
     lazy = false,
     init = function()
-        vim.cmd [[colorscheme nox]]
+        vim.cmd [[colorscheme umbra]]
     end
 }

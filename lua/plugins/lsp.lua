@@ -28,6 +28,12 @@ return {
             capabilities = capabilities,
         }
 
+        -- Go
+        lsp_config.gopls.setup {
+            on_attach = on_attach,
+            capabilities = capabilities,
+        }
+
         -- Kotlin
         lsp_config.kotlin_language_server.setup {
             on_attach = on_attach,
