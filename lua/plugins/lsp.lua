@@ -23,59 +23,69 @@ return {
         require 'lspconfig.ui.windows'.default_options.border = 'rounded'
 
         -- C
-        lsp_config.clangd.setup {
-            on_attach = on_attach,
-            capabilities = capabilities,
-        }
+        if vim.fn.executable("clangd") and vim.fn.executable("gcc") then
+            lsp_config.clangd.setup {
+                on_attach = on_attach,
+                capabilities = capabilities,
+            }
+        end
 
         -- Go
-        lsp_config.gopls.setup {
-            on_attach = on_attach,
-            capabilities = capabilities,
-        }
+        if vim.fn.executable("go") and vim.fn.executable("gopls") then
+            lsp_config.gopls.setup {
+                on_attach = on_attach,
+                capabilities = capabilities,
+            }
+        end
 
         -- Kotlin
-        lsp_config.kotlin_language_server.setup {
-            on_attach = on_attach,
-            capabilities = capabilities,
-            settings = {
-                kotlin = {
-                    compiler = {
-                        jvm = { target = "17" }
+        if vim.fn.executable("kotlin") and vim.fn.executable("kotlin-language-server") then
+            lsp_config.kotlin_language_server.setup {
+                on_attach = on_attach,
+                capabilities = capabilities,
+                settings = {
+                    kotlin = {
+                        compiler = {
+                            jvm = { target = "17" }
+                        }
                     }
                 }
             }
-        }
+        end
 
         -- Lua
-        lsp_config.lua_ls.setup {
-            on_attach = on_attach,
-            capabilities = capabilities,
-            settings = {
-                Lua = {
-                    runtime = {
-                        version = 'LuaJIT'
-                    },
-                    diagnostics = {
-                        globals = { 'vim' }
-                    },
-                    telemetry = {
-                        enable = false
+        if vim.fn.executable("lua") and vim.fn.executable("lua-language-server") then
+            lsp_config.lua_ls.setup {
+                on_attach = on_attach,
+                capabilities = capabilities,
+                settings = {
+                    Lua = {
+                        runtime = {
+                            version = 'LuaJIT'
+                        },
+                        diagnostics = {
+                            globals = { 'vim' }
+                        },
+                        telemetry = {
+                            enable = false
+                        }
                     }
                 }
             }
-        }
+        end
 
         -- Rust
-        lsp_config.rust_analyzer.setup {
-            on_attach = on_attach,
-            capabilities = capabilities,
-            settings = {
-                ["rust-analyzer"] = {
-                    checkOnSave = { command = "clippy" }
+        if vim.fn.executable("rust") and vim.fn.executable("rust-analyzer") then
+            lsp_config.rust_analyzer.setup {
+                on_attach = on_attach,
+                capabilities = capabilities,
+                settings = {
+                    ["rust-analyzer"] = {
+                        checkOnSave = { command = "clippy" }
+                    }
                 }
             }
-        }
+        end
     end,
     keys = {
         { 'gD',         '<cmd>lua vim.lsp.buf.declaration()<CR>' },
@@ -87,7 +97,7 @@ return {
         { '<leader>wr', '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>' },
         { '<leader>wl', '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>' },
         { '<leader>D',  '<cmd>lua vim.lsp.buf.type_definition()<CR>' },
---         { '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>' },
+        --         { '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>' },
         { '<leader>rn', '<cmd>:Renamid<CR>' },
         { '<leader>f',  '<cmd>lua vim.lsp.buf.format{ async = true }<CR>' }
     }
