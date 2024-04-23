@@ -22,6 +22,6 @@ return {
         { '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>' },
         { "gr",         "<cmd>lua require'telescope.builtin'.lsp_references()<cr>" },
         { "gi",         "<cmd>lua require'telescope.builtin'.lsp_implementations()<cr>" },
-        { "<leader>di", "<cmd>lua require'telescope.builtin'.diagnostics()<cr>" }
+        { "<leader>di", "<cmd>lua require'telescope.builtin'.diagnostics()<cr>" },
     }
 }
