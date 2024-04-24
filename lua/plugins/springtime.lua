@@ -15,7 +15,19 @@ return {
         spring = {
             java_version = {
                 selected = 2
+            },
+            project_metadata = {
+                group = "com.orfosys",
+                artifact = "orfosys",
+                package_name = "com.orfosys",
+                version = "0.1.0"
             }
+        },
+        workspace = {
+            path = "/home/javier/dir"
+        },
+        internal = {
+            log_debug = true
         }
     }
 }
