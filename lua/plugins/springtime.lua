@@ -26,8 +26,5 @@ return {
         workspace = {
             path = "/home/javier/dir"
         },
-        internal = {
-            log_debug = true
-        }
     }
 }
