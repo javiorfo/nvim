@@ -24,7 +24,7 @@ return {
             }
         },
         workspace = {
-            path = "/home/javier/dir"
-        },
+            path = "/home/javier/java"
+        }
     }
 }
