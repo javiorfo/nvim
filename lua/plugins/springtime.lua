@@ -4,7 +4,7 @@ return {
     enabled = true,
     cmd = { "Springtime", "SpringtimeUpdate", "SpringtimeBuild" },
     build = function()
-        require'springtime.core'.build()
+        require 'springtime.core'.build()
     end,
     dependencies = {
         "javiorfo/nvim-popcorn",
@@ -24,7 +24,7 @@ return {
             }
         },
         workspace = {
-            path = "/home/javier/java"
+            path = "/home/javier/dev/java"
         }
     }
 }
