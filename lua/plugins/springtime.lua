@@ -22,9 +22,6 @@ return {
                 package_name = "com.orfosys",
                 version = "0.1.0"
             }
-        },
-        workspace = {
-            path = "/home/javier/dev/java"
         }
     }
 }
