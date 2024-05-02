@@ -10,7 +10,7 @@ local config = {
     cmd = {
         'jdtls',
         '-data', home .. '/dev/java',
-        '--jvm-arg=-javaagent:/usr/local/lib/lombok/lombok.jar',
+        '--jvm-arg=-javaagent:/usr/lib/lombok-common/lombok.jar',
     },
     root_dir = jdtls.setup.find_root({ '.git', 'mvnw', 'gradlew' }),
     settings = {
