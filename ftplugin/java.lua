@@ -1,4 +1,3 @@
-local home = os.getenv("HOME")
 local jdtls = require 'jdtls'
 local dap = require 'dap'
 
@@ -9,7 +8,7 @@ local config = {
     capabilities = capabilities,
     cmd = {
         'jdtls',
-        '-data', home .. '/dev/java',
+        '-data', os.getenv("JAVA_WORKSPACE"),
         '--jvm-arg=-javaagent:/usr/lib/lombok-common/lombok.jar',
     },
     root_dir = jdtls.setup.find_root({ '.git', 'mvnw', 'gradlew' }),
@@ -22,7 +21,6 @@ local config = {
             },
             configuration = {
                 runtimes = {
-                    --                     { name = "JavaSE-1.8", path = "/usr/lib/jvm/java-8-openjdk" },
                     { name = "JavaSE-21", path = "/usr/lib/jvm/java-21-openjdk" },
                 }
             }
@@ -30,8 +28,7 @@ local config = {
     },
     init_options = {
         bundles = {
-            vim.fn.glob(
-                "~/.config/nvim/servers/java-debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-0.50.0.jar")
+            vim.fn.glob("/usr/share/java-debug/com.microsoft.java.debug.plugin.jar")
         }
     },
     on_attach = function(client, _)
