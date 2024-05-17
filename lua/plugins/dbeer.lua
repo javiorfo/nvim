@@ -1,8 +1,8 @@
 return {
-    "javiorfo/nvim-dbinder",
+    "javiorfo/nvim-dbeer",
     lazy = true,
     enabled = true,
-    cmd = { "DBinder" },
+    cmd = { "DBeer" },
     dependencies = {
         "javiorfo/nvim-popcorn",
         "javiorfo/nvim-spinetta",
