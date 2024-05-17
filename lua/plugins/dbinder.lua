@@ -1,8 +1,8 @@
 return {
-    "javiorfo/nvim-coagula",
+    "javiorfo/nvim-dbinder",
     lazy = true,
     enabled = true,
-    cmd = { "Coagula" },
+    cmd = { "DBinder" },
     dependencies = {
         "javiorfo/nvim-popcorn",
         "javiorfo/nvim-spinetta",
