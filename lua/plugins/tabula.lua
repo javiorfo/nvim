@@ -1,8 +1,8 @@
 return {
-    "javiorfo/nvim-dbeard",
+    "javiorfo/nvim-tabula",
     lazy = true,
     enabled = true,
-    cmd = { "DBeard" },
+    cmd = { "Tabula" },
     dependencies = {
         "javiorfo/nvim-popcorn",
         "javiorfo/nvim-spinetta",
