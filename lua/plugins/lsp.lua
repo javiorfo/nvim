@@ -38,21 +38,6 @@ return {
             }
         end
 
-        -- Kotlin
-        if vim.fn.executable("kotlin") and vim.fn.executable("kotlin-language-server") then
-            lsp_config.kotlin_language_server.setup {
-                on_attach = on_attach,
-                capabilities = capabilities,
-                settings = {
-                    kotlin = {
-                        compiler = {
-                            jvm = { target = "17" }
-                        }
-                    }
-                }
-            }
-        end
-
         -- Lua
         if vim.fn.executable("lua") and vim.fn.executable("lua-language-server") then
             lsp_config.lua_ls.setup {
