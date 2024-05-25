@@ -2,9 +2,9 @@ return {
     "javiorfo/nvim-springtime",
     lazy = true,
     enabled = true,
-    cmd = { "Springtime", "SpringtimeUpdate", "SpringtimeBuild" },
+    cmd = { "Springtime", "SpringtimeUpdate" },
     build = function()
-        require 'springtime.core'.build()
+        require 'springtime.core'.update()
     end,
     dependencies = {
         "javiorfo/nvim-popcorn",
@@ -15,6 +15,9 @@ return {
         spring = {
             java_version = {
                 selected = 2
+            },
+            spring_boot = {
+                selected = 4
             },
             project_metadata = {
                 group = "com.orfosys",
