@@ -38,6 +38,21 @@ return {
             }
         end
 
+                -- Kotlin
+        if vim.fn.executable("kotlin") and vim.fn.executable("kotlin-language-server") then
+            lsp_config.kotlin_language_server.setup {
+                on_attach = on_attach,
+                capabilities = capabilities,
+                settings = {
+                    kotlin = {
+                        compiler = {
+                            jvm = { target = "17" }
+                        }
+                    }
+                }
+            }
+        end
+
         -- Lua
         if vim.fn.executable("lua") and vim.fn.executable("lua-language-server") then
             lsp_config.lua_ls.setup {
@@ -54,6 +69,19 @@ return {
                         telemetry = {
                             enable = false
                         }
+                    }
+                }
+            }
+        end
+
+        -- Rust
+        if vim.fn.executable("rust") and vim.fn.executable("rust-analyzer") then
+            lsp_config.rust_analyzer.setup {
+                on_attach = on_attach,
+                capabilities = capabilities,
+                settings = {
+                    ["rust-analyzer"] = {
+                        checkOnSave = { command = "clippy" }
                     }
                 }
             }
