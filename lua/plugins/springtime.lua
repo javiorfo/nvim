@@ -2,9 +2,9 @@ return {
     "javiorfo/nvim-springtime",
     lazy = true,
     enabled = true,
-    cmd = { "Springtime", "SpringtimeUpdate", "SpringtimeUpdate" },
+    cmd = { "Springtime", "SpringtimeUpdate" },
     build = function()
-        require 'springtime.core'.build()
+        require 'springtime.core'.update()
     end,
     dependencies = {
         "javiorfo/nvim-popcorn",
