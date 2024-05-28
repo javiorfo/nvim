@@ -86,6 +86,14 @@ return {
                 }
             }
         end
+
+        -- Zig
+        if vim.fn.executable("zig") and vim.fn.executable("zls") then
+            lsp_config.zls.setup {
+                on_attach = on_attach,
+                capabilities = capabilities,
+            }
+        end
     end,
     keys = {
         { 'gD',         '<cmd>lua vim.lsp.buf.declaration()<CR>' },
