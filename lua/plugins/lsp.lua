@@ -38,7 +38,7 @@ return {
             }
         end
 
-                -- Kotlin
+        -- Kotlin
         if vim.fn.executable("kotlin") and vim.fn.executable("kotlin-language-server") then
             lsp_config.kotlin_language_server.setup {
                 on_attach = on_attach,
