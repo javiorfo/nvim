@@ -1,1 +1,1 @@
-return { "c", "go", "java", "kotlin", "lua", "rust", "zig" }
+return { "c", "go", "java", "kotlin", "lua" }
