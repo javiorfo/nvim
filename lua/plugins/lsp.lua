@@ -1,15 +1,14 @@
 local lsp_icons = require 'settings.util'.lsp_icons
 local languages = require 'settings.languages'
 
+-- remove java
+table.remove(languages, 3)
+
 return {
     "neovim/nvim-lspconfig",
     lazy = true,
     ft = languages,
     config = function()
-        if vim.bo.filetype == "java" then
-            return
-        end
-
         lsp_icons()
 
         local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -69,19 +68,6 @@ return {
                         telemetry = {
                             enable = false
                         }
-                    }
-                }
-            }
-        end
-
-        -- Rust
-        if vim.fn.executable("rust") and vim.fn.executable("rust-analyzer") then
-            lsp_config.rust_analyzer.setup {
-                on_attach = on_attach,
-                capabilities = capabilities,
-                settings = {
-                    ["rust-analyzer"] = {
-                        checkOnSave = { command = "clippy" }
                     }
                 }
             }
