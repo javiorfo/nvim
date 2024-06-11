@@ -7,7 +7,7 @@ return {
     dependencies = { "javiorfo/nvim-popcorn" },
     opts = {
         popup = true,
-        console_size = 20
+        console_size = 30
     },
     keys = {
         { "<leader>ji", "<Plug>Fuel" },
