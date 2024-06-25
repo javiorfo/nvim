@@ -1,9 +1,6 @@
 local lsp_icons = require 'settings.util'.lsp_icons
 local languages = require 'settings.languages'
 
--- remove java
-table.remove(languages, 3)
-
 return {
     "neovim/nvim-lspconfig",
     lazy = true,
