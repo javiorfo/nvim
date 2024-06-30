@@ -1,5 +1,5 @@
 return {
-    "javiorfo/nvim-springtime",
+    "chaosystema/nvim-springtime",
     lazy = true,
     enabled = true,
     cmd = { "Springtime", "SpringtimeUpdate" },
@@ -7,8 +7,8 @@ return {
         require 'springtime.core'.update()
     end,
     dependencies = {
-        "javiorfo/nvim-popcorn",
-        "javiorfo/nvim-spinetta",
+        "chaosystema/nvim-popcorn",
+        "chaosystema/nvim-spinetta",
         "hrsh7th/nvim-cmp"
     },
     opts = {
@@ -20,9 +20,9 @@ return {
                 selected = 4
             },
             project_metadata = {
-                group = "com.orfosys",
-                artifact = "orfosys",
-                package_name = "com.orfosys",
+                group = "com.chaosystema",
+                artifact = "chaosystema",
+                package_name = "com.chaosystema",
                 version = "0.1.0"
             }
         }
