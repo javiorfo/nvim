@@ -1,8 +1,8 @@
 local languages = require 'settings.languages'
 
 return {
-    "javiorfo/nvim-renamid",
+    "chaosystema/nvim-renamid",
     lazy = true,
     ft = languages,
-    dependencies = { "javiorfo/nvim-popcorn" }
+    dependencies = { "chaosystema/nvim-popcorn" }
 }
