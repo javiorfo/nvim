@@ -1,10 +1,10 @@
 local languages = require'settings.languages'
 
 return {
-    "chaosystema/nvim-fuel",
+    "javiorfo/nvim-fuel",
     lazy = true,
     ft = languages,
-    dependencies = { "chaosystema/nvim-popcorn" },
+    dependencies = { "javiorfo/nvim-popcorn" },
     opts = {
         popup = true,
         console_size = 30
