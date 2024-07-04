@@ -1,5 +1,5 @@
 return {
-    "chaosystema/nvim-nyctophilia",
+    "javiorfo/nvim-nyctophilia",
     lazy = false,
     init = function()
         vim.cmd [[colorscheme nox]]
