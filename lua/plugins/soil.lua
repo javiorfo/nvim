@@ -1,5 +1,5 @@
 return {
-    "chaosystema/nvim-soil",
+    "javiorfo/nvim-soil",
     lazy = true,
     ft = "plantuml"
 }
