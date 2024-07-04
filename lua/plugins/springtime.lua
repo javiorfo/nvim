@@ -20,9 +20,9 @@ return {
                 selected = 4
             },
             project_metadata = {
-                group = "com.chaosystema",
-                artifact = "chaosystema",
-                package_name = "com.chaosystema",
+                group = "com.orfosys",
+                artifact = "orfosys",
+                package_name = "com.orfosys",
                 version = "0.1.0"
             }
         }
