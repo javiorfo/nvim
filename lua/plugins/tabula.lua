@@ -1,11 +1,11 @@
 return {
-    "chaosystema/nvim-tabula",
+    "javiorfo/nvim-tabula",
     lazy = true,
     enabled = true,
     cmd = { "Tabula" },
     dependencies = {
-        "chaosystema/nvim-popcorn",
-        "chaosystema/nvim-spinetta",
+        "javiorfo/nvim-popcorn",
+        "javiorfo/nvim-spinetta",
         "hrsh7th/nvim-cmp"
     }
 }
