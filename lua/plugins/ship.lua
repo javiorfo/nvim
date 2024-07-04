@@ -1,11 +1,11 @@
 return {
-    "chaosystema/nvim-ship",
+    "javiorfo/nvim-ship",
     lazy = true,
     ft = "ship",
     cmd = { "ShipCreate", "ShipCreateEnv" },
     dependencies = {
-        "chaosystema/nvim-popcorn",
-        "chaosystema/nvim-spinetta",
+        "javiorfo/nvim-popcorn",
+        "javiorfo/nvim-spinetta",
         "hrsh7th/nvim-cmp"
     },
     opts = {
