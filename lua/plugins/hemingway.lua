@@ -1,7 +1,7 @@
 return {
-    "chaosystema/nvim-hemingway",
+    "javiorfo/nvim-hemingway",
     lazy = true,
-    dependencies = { "chaosystema/nvim-popcorn" },
+    dependencies = { "javiorfo/nvim-popcorn" },
     cmd = { "HemingwayInfo" },
     keys = {
         { "<leader>co", "<Plug>HemingwayComment" },
