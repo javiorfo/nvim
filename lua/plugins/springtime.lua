@@ -1,5 +1,5 @@
 return {
-    "chaosystema/nvim-springtime",
+    "javiorfo/nvim-springtime",
     lazy = true,
     enabled = true,
     cmd = { "Springtime", "SpringtimeUpdate" },
@@ -7,8 +7,8 @@ return {
         require 'springtime.core'.update()
     end,
     dependencies = {
-        "chaosystema/nvim-popcorn",
-        "chaosystema/nvim-spinetta",
+        "javiorfo/nvim-popcorn",
+        "javiorfo/nvim-spinetta",
         "hrsh7th/nvim-cmp"
     },
     opts = {
