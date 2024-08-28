@@ -13,6 +13,9 @@ return {
     },
     opts = {
         spring = {
+            project = {
+                selected = 3
+            },
             java_version = {
                 selected = 2
             },
@@ -20,9 +23,9 @@ return {
                 selected = 4
             },
             project_metadata = {
-                group = "com.orfosys",
-                artifact = "orfosys",
-                package_name = "com.orfosys",
+                group = "com.javi",
+                artifact = "app",
+                package_name = "com.javi",
                 version = "0.1.0"
             }
         }

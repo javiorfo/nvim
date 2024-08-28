@@ -1,8 +1,6 @@
-local languages = require 'settings.languages'
-
 return {
     "javiorfo/nvim-renamid",
     lazy = true,
-    ft = languages,
+    ft = { "c", "go", "java", "kotlin", "lua", "rust" },
     dependencies = { "javiorfo/nvim-popcorn" }
 }

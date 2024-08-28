@@ -1,5 +1,4 @@
 local jdtls = require 'jdtls'
-local dap = require 'dap'
 
 require 'settings.util'.lsp_icons()
 
@@ -35,16 +34,6 @@ local config = {
         client.server_capabilities.semanticTokensProvider = nil
         jdtls.setup_dap({ hotcodereplace = 'auto' })
     end
-}
-
-dap.configurations.java = {
-    {
-        type = 'java',
-        request = 'attach',
-        name = "Debug (Attach) - Remote",
-        hostName = "127.0.0.1",
-        port = 8787
-    }
 }
 
 jdtls.start_or_attach(config)

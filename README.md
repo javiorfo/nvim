@@ -8,6 +8,9 @@
     - [cmp-luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
     - [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [nvim-dap](https://github.com/mfussenegger/nvim-dap): Debugger
+    - [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui): UI
+    - [nvim-nio](https://github.com/nvim-neotest/nvim-nio): IO
+    - [nvim-dap-go](https://github.com/leoluz/nvim-dap-go): Go
 - [nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls): Java LSP
 - [nvim-fuel](https://github.com/javiorfo/nvim-fuel): Main runner
     - [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
@@ -22,6 +25,9 @@
     - [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
     - [nvim-spinetta](https://github.com/javiorfo/nvim-spinetta)
     - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [nvim-tabula](https://github.com/javiorfo/nvim-tabula): Multi SQL/NoSQL client
+    - [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
+    - [nvim-spinetta](https://github.com/javiorfo/nvim-spinetta)
 - [nvim-wildcat](https://github.com/javiorfo/nvim-wildcat): JBoss and Tomcat plugin
     - [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
 - [nvim-telescope](https://github.com/nvim-telescope/telescope.nvim)
@@ -39,4 +45,3 @@
 
 ### Donate
 - **Bitcoin** [(QR)](https://raw.githubusercontent.com/javiorfo/img/master/crypto/bitcoin.png)  `1GqdJ63RDPE4eJKujHi166FAyigvHu5R7v`
-- [Paypal](https://www.paypal.com/donate/?hosted_button_id=FA7SGLSCT2H8G)

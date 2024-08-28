@@ -1,11 +1,16 @@
 return {
     "javiorfo/nvim-tabula",
     lazy = true,
-    enabled = true,
-    cmd = { "Tabula" },
+    ft = { "sql", "javascript" },
+    cmd = { "TabulaBuild" },
     dependencies = {
         "javiorfo/nvim-popcorn",
         "javiorfo/nvim-spinetta",
-        "hrsh7th/nvim-cmp"
+    },
+    build = function()
+        require 'tabula.core'.build()
+    end,
+    opts = {
+        db = dofile(os.getenv("HOME") .. "/dev/db/connections.lua")
     }
 }

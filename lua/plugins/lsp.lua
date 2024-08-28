@@ -1,10 +1,9 @@
 local lsp_icons = require 'settings.util'.lsp_icons
-local languages = require 'settings.languages'
 
 return {
     "neovim/nvim-lspconfig",
     lazy = true,
-    ft = languages,
+    ft = { "c", "go", "kotlin", "lua", "rust" },
     config = function()
         lsp_icons()
 
@@ -51,6 +50,7 @@ return {
 
         -- Lua
         if vim.fn.executable("lua") and vim.fn.executable("lua-language-server") then
+            vim.cmd[[hi link @keyword Type]]
             lsp_config.lua_ls.setup {
                 on_attach = on_attach,
                 capabilities = capabilities,
@@ -70,7 +70,7 @@ return {
             }
         end
 
-        -- Rust
+         -- Rust
         if vim.fn.executable("rust") and vim.fn.executable("rust-analyzer") then
             lsp_config.rust_analyzer.setup {
                 on_attach = on_attach,
