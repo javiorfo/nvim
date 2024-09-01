@@ -39,7 +39,6 @@
 - [nvim-renamid](https://github.com/javiorfo/nvim-renamid): LSP rename function in popup
     - [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim): Statusline
-- [vimtex](https://github.com/lervag/vimtex): LaTeX plugin
 
 ---
 
