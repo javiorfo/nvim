@@ -1,14 +1,14 @@
 return {
-    "javiorfo/nvim-tabula",
+    "javiorfo/nvim-dbeer",
     lazy = true,
     ft = { "sql", "javascript" },
-    cmd = { "TabulaBuild" },
+    cmd = { "DBeerBuild" },
     dependencies = {
         "javiorfo/nvim-popcorn",
         "javiorfo/nvim-spinetta",
     },
     build = function()
-        require 'tabula.core'.build()
+        require 'dbeer.core'.build()
     end,
     opts = {
         db = dofile(os.getenv("HOME") .. "/dev/db/connections.lua")

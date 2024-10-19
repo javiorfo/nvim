@@ -25,7 +25,7 @@
     - [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
     - [nvim-spinetta](https://github.com/javiorfo/nvim-spinetta)
     - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-- [nvim-tabula](https://github.com/javiorfo/nvim-tabula): Multi SQL/NoSQL client
+- [nvim-dbeer](https://github.com/javiorfo/nvim-dbeer): Multi SQL/NoSQL client
     - [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
     - [nvim-spinetta](https://github.com/javiorfo/nvim-spinetta)
 - [nvim-wildcat](https://github.com/javiorfo/nvim-wildcat): JBoss and Tomcat plugin
