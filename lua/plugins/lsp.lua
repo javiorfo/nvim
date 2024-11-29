@@ -50,7 +50,7 @@ return {
 
         -- Lua
         if vim.fn.executable("lua") and vim.fn.executable("lua-language-server") then
-            vim.cmd[[hi link @keyword Type]]
+            vim.cmd [[hi link @keyword Type]]
             lsp_config.lua_ls.setup {
                 on_attach = on_attach,
                 capabilities = capabilities,
@@ -70,7 +70,7 @@ return {
             }
         end
 
-         -- Rust
+        -- Rust
         if vim.fn.executable("rust") and vim.fn.executable("rust-analyzer") then
             lsp_config.rust_analyzer.setup {
                 on_attach = on_attach,
@@ -90,7 +90,6 @@ return {
                 capabilities = capabilities,
             }
         end
-
     end,
     keys = {
         { 'gD',         '<cmd>lua vim.lsp.buf.declaration()<CR>' },

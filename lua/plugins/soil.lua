@@ -1,5 +1,10 @@
 return {
     "javiorfo/nvim-soil",
     lazy = true,
-    ft = "plantuml"
+    ft = "plantuml",
+    opts = {
+        actions = {
+            redraw = true
+        }
+    }
 }
