@@ -3,7 +3,7 @@ local lsp_icons = require 'settings.util'.lsp_icons
 return {
     "neovim/nvim-lspconfig",
     lazy = true,
-    ft = { "c", "go", "kotlin", "lua", "zig" },
+    ft = { "c", "go", "lua", "zig" },
     config = function()
         lsp_icons()
 
@@ -30,21 +30,6 @@ return {
             lsp_config.gopls.setup {
                 on_attach = on_attach,
                 capabilities = capabilities,
-            }
-        end
-
-        -- Kotlin
-        if vim.fn.executable("kotlin") and vim.fn.executable("kotlin-language-server") then
-            lsp_config.kotlin_language_server.setup {
-                on_attach = on_attach,
-                capabilities = capabilities,
-                settings = {
-                    kotlin = {
-                        compiler = {
-                            jvm = { target = "17" }
-                        }
-                    }
-                }
             }
         end
 

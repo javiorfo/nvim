@@ -35,7 +35,7 @@
     - [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
 - [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua): File Manager
     - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
-- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig): LSP (C, Go, Java, Kotlin, Lua, Zig)
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig): LSP (C, Go, Lua, Zig)
 - [nvim-renamid](https://github.com/javiorfo/nvim-renamid): LSP rename function in popup
     - [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim): Statusline
