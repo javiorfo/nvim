@@ -10,7 +10,7 @@ return {
     },
     opts = {
         response = {
-            show_headers = 'res',
+            show_headers = 'all',
             window_type = 'p',
             size = 30
         }
