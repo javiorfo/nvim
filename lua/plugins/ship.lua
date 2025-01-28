@@ -2,7 +2,10 @@ return {
     "javiorfo/nvim-ship",
     lazy = true,
     ft = "ship",
-    cmd = { "ShipCreate", "ShipCreateEnv" },
+    build = function()
+        require 'ship.commands'.build()
+    end,
+    cmd = { "ShipBuild", "ShipCreate", "ShipCreateEnv" },
     dependencies = {
         "javiorfo/nvim-popcorn",
         "javiorfo/nvim-spinetta",
