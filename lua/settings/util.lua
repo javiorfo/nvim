@@ -17,6 +17,9 @@ local opts = {
     title = { "  CMD", "Boolean" },
     content = function()
         vim.cmd("start | term")
+    end,
+    on_close = function()
+        vim.api.nvim_input("<CR>")
     end
 }
 
