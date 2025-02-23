@@ -6,7 +6,7 @@ return {
         "leoluz/nvim-dap-go",
     },
     lazy = true,
-    ft = { "java", "go", "rust" },
+    ft = { "java", "go" },
     config = function()
         local dap = require("dap")
         local dapui = require("dapui")
@@ -18,28 +18,6 @@ return {
         dap.listeners.before.launch.dapui_config = function()
             dapui.open()
         end
-
-        -- Rust
-        dap.adapters.codelldb = {
-            type = 'server',
-            port = "${port}",
-            executable = {
-                command = 'codelldb',
-                args = { "--port", "${port}" },
-            }
-        }
-        dap.configurations.rust = {
-            {
-                name = "Launch file",
-                type = "codelldb",
-                request = "launch",
-                program = function()
-                    return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/target/debug/', 'file')
-                end,
-                cwd = '${workspaceFolder}',
-                stopOnEntry = false,
-            },
-        }
 
         -- Go
         require("dap-go").setup()

@@ -19,7 +19,10 @@ local opts = {
         vim.cmd("start | term")
     end,
     on_close = function()
-        vim.api.nvim_input("<CR>")
+        local nvim_tree = vim.fn.bufnr("NvimTree_1")
+        if vim.fn.bufexists(nvim_tree) and vim.api.nvim_buf_is_valid(nvim_tree) then
+            vim.api.nvim_input("<CR>")
+        end
     end
 }
 
