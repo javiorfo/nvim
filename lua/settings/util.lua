@@ -11,8 +11,8 @@ function M.lsp_icons()
 end
 
 local opts = {
-    width = 120,
-    height = 30,
+    width = 160,
+    height = 40,
     border = borders.rounded_corners_border,
     title = { "  CMD", "Boolean" },
     content = function()
