@@ -7,7 +7,7 @@
     - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
     - [cmp-luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
     - [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
-- [nvim-dap](https://github.com/mfussenegger/nvim-dap): Debugger (Java, Rust, Go)
+- [nvim-dap](https://github.com/mfussenegger/nvim-dap): Debugger (Java, Go)
     - [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui): UI
     - [nvim-nio](https://github.com/nvim-neotest/nvim-nio): IO
     - [nvim-dap-go](https://github.com/leoluz/nvim-dap-go): Go
@@ -35,7 +35,7 @@
     - [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
 - [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua): File Manager
     - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
-- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig): LSP (C, Go, Lua, Rust, Zig)
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig): LSP (C, Go, Lua, Zig)
 - [nvim-renamid](https://github.com/javiorfo/nvim-renamid): LSP rename function in popup
     - [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim): Statusline
