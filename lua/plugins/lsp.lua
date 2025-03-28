@@ -3,7 +3,7 @@ local lsp_icons = require 'settings.util'.lsp_icons
 return {
     "neovim/nvim-lspconfig",
     lazy = true,
-    ft = { "c", "go", "lua", "rust", "zig" },
+    ft = { "c", "go", "lua", "zig" },
     config = function()
         lsp_icons()
 
@@ -50,19 +50,6 @@ return {
                         telemetry = {
                             enable = false
                         }
-                    }
-                }
-            }
-        end
-
-        -- Rust
-        if vim.fn.executable("rust") and vim.fn.executable("rust-analyzer") then
-            lsp_config.rust_analyzer.setup {
-                on_attach = on_attach,
-                capabilities = capabilities,
-                settings = {
-                    ["rust-analyzer"] = {
-                        checkOnSave = { command = "clippy" }
                     }
                 }
             }
