@@ -3,7 +3,7 @@ local lsp_icons = require 'settings.util'.lsp_icons
 return {
     "neovim/nvim-lspconfig",
     lazy = true,
-    ft = { "c", "go", "lua", "rust", "zig" },
+    ft = { "c", "go", "lua", "rust" },
     config = function()
         lsp_icons()
 
@@ -18,63 +18,47 @@ return {
         require 'lspconfig.ui.windows'.default_options.border = 'rounded'
 
         -- C
-        if vim.fn.executable("clangd") and vim.fn.executable("gcc") then
-            lsp_config.clangd.setup {
-                on_attach = on_attach,
-                capabilities = capabilities,
-            }
-        end
+        lsp_config.clangd.setup {
+            on_attach = on_attach,
+            capabilities = capabilities,
+        }
 
         -- Go
-        if vim.fn.executable("go") and vim.fn.executable("gopls") then
-            lsp_config.gopls.setup {
-                on_attach = on_attach,
-                capabilities = capabilities,
-            }
-        end
+        lsp_config.gopls.setup {
+            on_attach = on_attach,
+            capabilities = capabilities,
+        }
 
         -- Lua
-        if vim.fn.executable("lua") and vim.fn.executable("lua-language-server") then
-            vim.cmd [[hi link @keyword Type]]
-            lsp_config.lua_ls.setup {
-                on_attach = on_attach,
-                capabilities = capabilities,
-                settings = {
-                    Lua = {
-                        runtime = {
-                            version = 'LuaJIT'
-                        },
-                        diagnostics = {
-                            globals = { 'vim' }
-                        },
-                        telemetry = {
-                            enable = false
-                        }
+        vim.cmd [[hi link @keyword Type]]
+        lsp_config.lua_ls.setup {
+            on_attach = on_attach,
+            capabilities = capabilities,
+            settings = {
+                Lua = {
+                    runtime = {
+                        version = 'LuaJIT'
+                    },
+                    diagnostics = {
+                        globals = { 'vim' }
+                    },
+                    telemetry = {
+                        enable = false
                     }
                 }
             }
-        end
+        }
 
         -- Rust
-        if vim.fn.executable("rust") and vim.fn.executable("rust-analyzer") then
-            lsp_config.rust_analyzer.setup {
-                on_attach = on_attach,
-                capabilities = capabilities,
-                settings = {
-                    ["rust-analyzer"] = {
-                        checkOnSave = { command = "clippy" }
-                    }
+        lsp_config.rust_analyzer.setup {
+            on_attach = on_attach,
+            capabilities = capabilities,
+            settings = {
+                ["rust-analyzer"] = {
+                    checkOnSave = { command = "clippy" }
                 }
             }
-        end
-
-        -- Zig
-        if vim.fn.executable("zig") and vim.fn.executable("zls") then
-            lsp_config.zls.setup {
-                on_attach = on_attach,
-                capabilities = capabilities,
-            }
-        end
+        }
     end,
     keys = {
         { 'gD',         '<cmd>lua vim.lsp.buf.declaration()<CR>' },

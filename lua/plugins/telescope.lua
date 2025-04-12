@@ -11,23 +11,6 @@ return {
                 ["ui-select"] = {
                     require 'telescope.themes'.get_dropdown {}
                 }
-            },
-            defaults = {
-                vimgrep_arguments = {
-                    "grep",
-                    "--extended-regexp",
-                    "--color=never",
-                    "--with-filename",
-                    "--line-number",
-                    "-b",
-                    "--ignore-case",
-                    "--recursive",
-                    "--no-messages",
-                    "--exclude-dir=*cache*",
-                    "--exclude-dir=*.git",
-                    "--exclude=.*",
-                    "--binary-files=without-match"
-                },
             }
         }
         require 'telescope'.load_extension("ui-select")
