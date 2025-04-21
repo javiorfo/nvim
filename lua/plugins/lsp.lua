@@ -3,7 +3,7 @@ local lsp_icons = require 'settings.util'.lsp_icons
 return {
     "neovim/nvim-lspconfig",
     lazy = true,
-    ft = { "c", "go", "lua", "rust" },
+    ft = { "c", "go", "lua", "zig" },
     config = function()
         lsp_icons()
 
@@ -49,15 +49,10 @@ return {
             }
         }
 
-        -- Rust
-        lsp_config.rust_analyzer.setup {
+        -- Zig
+        lsp_config.zls.setup {
             on_attach = on_attach,
             capabilities = capabilities,
-            settings = {
-                ["rust-analyzer"] = {
-                    checkOnSave = { command = "clippy" }
-                }
-            }
         }
     end,
     keys = {
