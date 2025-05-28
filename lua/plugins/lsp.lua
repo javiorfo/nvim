@@ -3,7 +3,7 @@ local lsp_icons = require 'settings.util'.lsp_icons
 return {
     "neovim/nvim-lspconfig",
     lazy = true,
-    ft = { "c", "go", "lua", "rust", "zig" },
+    ft = { "c", "go", "lua", "rust" },
     config = function()
         lsp_icons()
 
@@ -62,12 +62,6 @@ return {
                     checkOnSave = true,
                 },
             },
-        }
-
-        -- Zig
-        lsp_config.zls.setup {
-            on_attach = on_attach,
-            capabilities = capabilities,
         }
     end,
     keys = {
