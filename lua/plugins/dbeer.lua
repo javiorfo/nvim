@@ -1,7 +1,7 @@
 return {
     "javiorfo/nvim-dbeer",
     lazy = true,
-    ft = { "sql", "javascript" },
+    ft = { "sql", "javascript", "redis" },
     cmd = { "DBeerBuild" },
     dependencies = {
         "javiorfo/nvim-popcorn",
