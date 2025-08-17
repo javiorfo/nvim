@@ -1,7 +1,5 @@
 local jdtls = require 'jdtls'
 
-require 'settings.util'.lsp_icons()
-
 local config = {
     ---@diagnostic disable-next-line: undefined-global
     capabilities = capabilities,

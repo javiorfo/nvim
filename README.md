@@ -2,43 +2,35 @@
 *Personal Neovim Configuration*
 
 ## Plugins
-- [nvim-nyctophilia](https://github.com/javiorfo/nvim-nyctophilia): Colorscheme
-- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp): Autocomplete
-    - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
-    - [cmp-luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
-    - [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
-- [nvim-dap](https://github.com/mfussenegger/nvim-dap): Debugger (Java, Go, Rust)
-    - [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui): UI
-    - [nvim-nio](https://github.com/nvim-neotest/nvim-nio): IO
-    - [nvim-dap-go](https://github.com/leoluz/nvim-dap-go): Go
-- [nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls): Java LSP
-- [nvim-fuel](https://github.com/javiorfo/nvim-fuel): Main runner
-    - [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
-- [nvim-ship](https://github.com/javiorfo/nvim-popcorn): REST, GraphQL API caller
-    - [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
-    - [nvim-spinetta](https://github.com/javiorfo/nvim-spinetta)
-    - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-- [nvim-hemingway](https://github.com/javiorfo/nvim-hemingway): Comments
-    - [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
-- [nvim-soil](https://github.com/javiorfo/nvim-soil): Plant UML
-- [nvim-springtime](https://github.com/javiorfo/nvim-springtime): Spring Initializr Wrapper
-    - [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
-    - [nvim-spinetta](https://github.com/javiorfo/nvim-spinetta)
-    - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-- [nvim-dbeer](https://github.com/javiorfo/nvim-dbeer): Multi SQL/NoSQL client
-    - [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
-    - [nvim-spinetta](https://github.com/javiorfo/nvim-spinetta)
-- [nvim-wildcat](https://github.com/javiorfo/nvim-wildcat): JBoss and Tomcat plugin
-    - [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
+- [cmp-luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
+- [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [nvim-dap](https://github.com/mfussenegger/nvim-dap)
+- [nvim-dap-go](https://github.com/leoluz/nvim-dap-go)
+- [nvim-dap-ui](https://github.com/rcarriga/nvim-dap-ui)
+- [nvim-dbeer](https://github.com/javiorfo/nvim-dbeer)
+- [nvim-fuel](https://github.com/javiorfo/nvim-fuel)
+- [nvim-hemingway](https://github.com/javiorfo/nvim-hemingway)
+- [nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls)
+- [nvim-nio](https://github.com/nvim-neotest/nvim-nio)
+- [nvim-nyctophilia](https://github.com/javiorfo/nvim-nyctophilia)
+- [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
+- [nvim-renamid](https://github.com/javiorfo/nvim-renamid)
+- [nvim-ship](https://github.com/javiorfo/nvim-popcorn)
+- [nvim-soil](https://github.com/javiorfo/nvim-soil)
+- [nvim-spinetta](https://github.com/javiorfo/nvim-spinetta)
+- [nvim-springtime](https://github.com/javiorfo/nvim-springtime)
 - [nvim-telescope](https://github.com/nvim-telescope/telescope.nvim)
-    - [telescope-ui-select.nvim](https://github.com/nvim-telescope/telescope-ui-select.nvim)
-    - [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
-- [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua): File Manager
-    - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
-- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig): LSP (C, Go, Lua, Rust)
-- [nvim-renamid](https://github.com/javiorfo/nvim-renamid): LSP rename function in popup
-    - [nvim-popcorn](https://github.com/javiorfo/nvim-popcorn)
-- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim): Statusline
+- [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
+- [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
+- [nvim-wildcat](https://github.com/javiorfo/nvim-wildcat)
+- [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
+- [telescope-ui-select.nvim](https://github.com/nvim-telescope/telescope-ui-select.nvim)
+
+## LSP
+- **C | Go | Java | Lua | Rust**
 
 ---
 

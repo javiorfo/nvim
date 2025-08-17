@@ -76,12 +76,6 @@ return {
             },
         } ]]
 
-        vim.keymap.set("n", "<leader>dt", dap.toggle_breakpoint, { desc = "[D]ebug [T]oggle Breakpoint" })
-        vim.keymap.set("n", "<leader>ds", dap.continue, { desc = "[D]ebug [S]tart" })
-        vim.keymap.set("n", "<leader>dc", dapui.close, { desc = "[D]ebug [C]lose" })
-        vim.keymap.set("n", "<leader>do", dap.step_over, { desc = "[D]ebug [O]ver" })
-        vim.keymap.set("n", "<leader>di", dap.step_into, { desc = "[D]ebug [I]nto" })
-        vim.keymap.set("n", "<leader>du", dap.step_out, { desc = "[D]ebug o[U]t" })
-        vim.keymap.set("n", "<leader>dq", dap.terminate, { desc = "[D]ebug [Q]uit" })
+        require"config.keymaps".dap_keymaps()
     end
 }
