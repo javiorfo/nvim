@@ -9,7 +9,7 @@ vim.keymap.set("n", "gt", vim.lsp.buf.declaration, { desc = "LSP: Go to Declarat
 vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "LSP: Go to Implementation" })
 vim.keymap.set("n", "<leader>D", vim.lsp.buf.type_definition, { desc = "LSP: Type Definition" })
 vim.keymap.set("n", "<C-K>", vim.lsp.buf.signature_help, { desc = "LSP: Signature Help" })
--- vim.keymap.set("n", "e", vim.diagnostic.open_float, { desc = "LSP: Type Definition" })
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "LSP: Show Error" })
 vim.keymap.set("n", "<leader>rn", function() vim.cmd("Renamid") end, { desc = "LSP: Rename" })
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = "LSP: Format" })
 
