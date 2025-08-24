@@ -24,6 +24,7 @@
 - [nvim-springtime](https://github.com/javiorfo/nvim-springtime)
 - [nvim-telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
+- [nvim-treesiter](https://github.com/nvim-treesitter/nvim-treesitter/tree/master)
 - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
 - [nvim-wildcat](https://github.com/javiorfo/nvim-wildcat)
 - [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)

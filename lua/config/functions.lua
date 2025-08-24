@@ -2,7 +2,6 @@ local popcorn = require 'popcorn'
 local borders = require 'popcorn.borders'
 
 local M = {}
-
 local opts = {
     width = 160,
     height = 40,
