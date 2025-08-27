@@ -1,11 +1,11 @@
-vim.lsp.enable({
+vim.lsp.enable {
     "clangd",
     "gopls",
     "lua_ls",
     "rust_analyzer",
-})
+}
 
-vim.diagnostic.config({
+vim.diagnostic.config {
     virtual_lines = false,
     virtual_text = true,
     underline = true,
@@ -27,4 +27,4 @@ vim.diagnostic.config({
             [vim.diagnostic.severity.WARN] = "WarningMsg",
         },
     },
-})
+}
