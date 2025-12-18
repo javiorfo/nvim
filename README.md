@@ -31,7 +31,7 @@
 - [telescope-ui-select.nvim](https://github.com/nvim-telescope/telescope-ui-select.nvim)
 
 ## LSP
-- **C | Go | Java | Lua | Rust**
+- **C | Go | Java | Lua | Python | Rust**
 
 ---
 
