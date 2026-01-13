@@ -2,8 +2,6 @@ vim.lsp.enable {
     "clangd",
     "gopls",
     "lua_ls",
-    "pyright",
-    "rust_analyzer",
 }
 
 vim.diagnostic.config {

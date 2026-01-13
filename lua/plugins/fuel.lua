@@ -1,7 +1,7 @@
 return {
     "javiorfo/nvim-fuel",
     lazy = true,
-    ft = { "c", "go", "java", "lua", "rust" },
+    ft = { "c", "go", "java", "lua" },
     dependencies = { "javiorfo/nvim-popcorn" },
     opts = {
         view = {
