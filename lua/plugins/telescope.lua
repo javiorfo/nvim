@@ -12,6 +12,23 @@ return {
                     require 'telescope.themes'.get_dropdown {}
                 }
             },
+            defaults = {
+                vimgrep_arguments = {
+                    "grep",
+                    "--extended-regexp",
+                    "--color=never",
+                    "--with-filename",
+                    "--line-number",
+                    "-b",
+                    "--ignore-case",
+                    "--recursive",
+                    "--no-messages",
+                    "--exclude-dir=*cache*",
+                    "--exclude-dir=*.git",
+                    "--exclude=.*",
+                    "--binary-files=without-match"
+                },
+            }
         }
         require 'telescope'.load_extension("ui-select")
     end,
@@ -19,6 +36,7 @@ return {
         { "<leader>ff", "<cmd>Telescope find_files<cr>" },
         { "<leader>fg", "<cmd>Telescope live_grep<cr>" },
         { "<leader>fh", "<cmd>Telescope help_tags<cr>" },
+        { "<leader>fs", "<cmd>Telescope current_buffer_fuzzy_find<cr>" },
         { '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>' },
         { "gr",         "<cmd>lua require'telescope.builtin'.lsp_references()<cr>" },
         { "gi",         "<cmd>lua require'telescope.builtin'.lsp_implementations()<cr>" },
