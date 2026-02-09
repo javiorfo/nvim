@@ -3,4 +3,4 @@ require("config.keymaps")
 require("core.lsp")
 require("core.lazy")
 
-vim.cmd [[colorscheme nox]]
+vim.cmd [[colorscheme umbra]]
