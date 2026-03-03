@@ -8,7 +8,7 @@ local config = {
         '-data', os.getenv("JAVA_WORKSPACE"),
         '--jvm-arg=-javaagent:/usr/lib/lombok-common/lombok.jar',
     },
-    root_dir = jdtls.setup.find_root({ '.git', 'mvnw', 'gradlew' }),
+    root_dir = vim.fs.root(0, {'.git', 'pom.xml'}),
     settings = {
         java = {
             codeGeneration = {
